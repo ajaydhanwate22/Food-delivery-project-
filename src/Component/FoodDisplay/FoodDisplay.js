@@ -5,6 +5,7 @@ import FoodItem from '../FoodItem/FoodItem'
 export default function FoodDisplay({ category }) {
 
   const { food_list } = useContext(StoreContext)
+  
   return (
     <>
       <div className="food-display mt-7" id='food-display'>

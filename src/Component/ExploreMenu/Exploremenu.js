@@ -11,7 +11,7 @@ export default function Exploremenu({ category, setCategory }) {
           {menu_list.map((item, index) => {
             return (
               <div onClick={() => setCategory(prev => prev === item.menu_name ? "All" : item.menu_name)} key={index} className="explore-menu-list-item">
-                <img className={category === item.menu_name ? "active border-4 active:border-tomato active:p-2 w-[7.5vw] min-w-[80px] cursor-pointer rounded-full transition duration-200" : ""}
+                <img className={category === item.menu_name ? "active border-4 active:border-tomato active:p-2 w-[7.5vw] min-w-[80px] cursor-pointer rounded-full transition duration-200" :""}
                   src={item.menu_image} alt="" />
                 <p className='mt-4 text-[#747474] text-base sm:text-lg cursor-pointer'>{item.menu_name}</p>
               </div>

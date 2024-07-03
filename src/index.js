@@ -9,9 +9,9 @@ import StoreContextProvider from './context/Storecontext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-  <StoreContextProvider>
-  <App />
-  </StoreContextProvider>
-</BrowserRouter>
+    <StoreContextProvider>
+      <App />
+    </StoreContextProvider>
+  </BrowserRouter>
 );
 reportWebVitals();
